@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Create Roles Migration",
+  "description": "Membuat migration untuk tabel roles",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "cd /d C:\\laravel-conveksi && php artisan make:migration create_roles_table",
+    "timeout": 60
+  }
+}
